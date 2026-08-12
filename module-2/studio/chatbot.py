@@ -2,10 +2,21 @@ from typing import Literal
 from langchain_core.messages import HumanMessage, SystemMessage, RemoveMessage
 from langgraph.graph import MessagesState
 from langgraph.graph import StateGraph, START, END
+from langchain_ollama import ChatOllama
+import sys
+sys.path.append("../../")
+
+from config import phoenix_config_
 
 # We will use this model for both the conversation and the summarization
-from langchain_openai import ChatOpenAI
-model = ChatOpenAI(model="gpt-4o", temperature=0) 
+# from langchain_openai import ChatOpenAI
+# model = ChatOpenAI(model="gpt-4o", temperature=0) 
+
+model = ChatOllama(model="llama3.2:latest",
+                   base_url='http://localhost:11434/',
+                   temperature=0,
+                   ollama_timeout=5
+                   )
 
 # State class to store messages and summary
 class State(MessagesState):

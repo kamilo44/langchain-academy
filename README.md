@@ -2,16 +2,20 @@
 
 ## Introduction
 
-Welcome to LangChain Academy, Introduction to LangGraph! 
+Welcome to LangChain Academy! 
 This is a growing set of modules focused on foundational concepts within the LangChain ecosystem. 
-Module 0 is basic setup and Modules 1 - 5 focus on building in LangGraph, progressively adding more advanced themes.  Module 6 addresses deploying your agents. 
-In each module folder, you'll see a set of notebooks. A link to the LangChain Academy lesson is at the top of each notebook to guide you through the topic. Each module also has a `studio` subdirectory, with a set of relevant graphs that we will explore using the LangGraph API and Studio.
+Module 0 is basic setup and Modules 1 - 4 focus on LangGraph, progressively adding more advanced themes. 
+In each module folder, you'll see a set of notebooks. A LangChain Academy accompanies each notebook 
+to guide you through the topic. Each module also has a `studio` subdirectory, with a set of relevant 
+graphs that we will explore using the LangGraph API and Studio.
 
 ## Setup
 
 ### Python version
 
-Make sure you're using Python version 3.11, 3.12, or 3.13.
+To get the most out of this course, please ensure you're using Python 3.11 or later. 
+This version is required for optimal compatibility with LangGraph. If you're on an older version, 
+upgrading will ensure everything runs smoothly.
 ```
 python3 --version
 ```
@@ -21,7 +25,6 @@ python3 --version
 git clone https://github.com/langchain-ai/langchain-academy.git
 $ cd langchain-academy
 ```
-Or, if you prefer, you can download a zip file [here](https://github.com/langchain-ai/langchain-academy/archive/refs/heads/main.zip).
 
 ### Create an environment and install dependencies
 #### Mac/Linux/WSL
@@ -34,18 +37,19 @@ $ pip install -r requirements.txt
 ```
 PS> python3 -m venv lc-academy-env
 PS> Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope Process
-PS> .\lc-academy-env\Scripts\Activate.ps1
+PS> lc-academy-env\scripts\activate
 PS> pip install -r requirements.txt
 ```
 
 ### Running notebooks
-If you don't have Jupyter set up, follow the installation instructions [here](https://jupyter.org/install).
+If you don't have Jupyter set up, follow installation instructions [here](https://jupyter.org/install).
 ```
 $ jupyter notebook
 ```
 
 ### Setting up env variables
-Briefly going over how to set up environment variables. 
+Briefly going over how to set up environment variables. You can also 
+use a `.env` file with `python-dotenv` library.
 #### Mac/Linux/WSL
 ```
 $ export API_ENV_VAR="your-api-key-here"
@@ -60,9 +64,9 @@ PS> $env:API_ENV_VAR = "your-api-key-here"
 *  Set `OPENAI_API_KEY` in your environment 
 
 ### Sign up and Set LangSmith API
-* Sign up for LangSmith [here](https://docs.langchain.com/langsmith/create-account-api-key#create-an-account-and-api-key), find out more about LangSmith and how to use it within your workflow [here](https://www.langchain.com/langsmith). 
-*  Set `LANGSMITH_API_KEY`, `LANGSMITH_TRACING_V2="true"` `LANGSMITH_PROJECT="langchain-academy"`in your environment 
-*  If you are on the EU instance also set `LANGSMITH_ENDPOINT`="https://eu.api.smith.langchain.com" as well.
+* Sign up for LangSmith [here](https://smith.langchain.com/), find out more about LangSmith
+* and how to use it within your workflow [here](https://www.langchain.com/langsmith), and relevant library [docs](https://docs.smith.langchain.com/)!
+*  Set `LANGSMITH_API_KEY`, `LANGSMITH_TRACING_V2=true` `LANGSMITH_PROJECT="langchain-academy"`in your environment 
 
 ### Set up Tavily API for web search
 
@@ -73,13 +77,13 @@ It's easy to sign up and offers a very generous free tier. Some lessons (in Modu
 
 * Set `TAVILY_API_KEY` in your environment.
 
-### Set up Studio
+### Set up LangGraph Studio
 
-* Studio is a custom IDE for viewing and testing agents.
+* LangGraph Studio is a custom IDE for viewing and testing agents.
 * Studio can be run locally and opened in your browser on Mac, Windows, and Linux.
-* See documentation [here](https://docs.langchain.com/langsmith/studio#local-development-server) on the local Studio development server. 
-* Graphs for LangGraph Studio are in the `module-x/studio/` folders for module 1-5.
-* To start the local development server, make sure your virtual environment is active and run the following command in your terminal in the `/studio` directory in each module:
+* See documentation [here](https://langchain-ai.github.io/langgraph/concepts/langgraph_studio/#local-development-server) on the local Studio development server and [here](https://langchain-ai.github.io/langgraph/cloud/how-tos/studio/quick_start/#local-development-server). 
+* Graphs for LangGraph Studio are in the `module-x/studio/` folders.
+* To start the local development server, run the following command in your terminal in the `/studio` directory each module:
 
 ```
 langgraph dev
