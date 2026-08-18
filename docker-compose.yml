@@ -1,0 +1,59 @@
+version: "3.9"
+services:
+  ollama:
+    image: ollama/ollama:latest
+    container_name: ollama-gpu
+    ports:
+      - "11434:11434"
+    networks:
+      - phoenix_net
+    volumes:
+      - ollama_data:/root/.ollama
+    deploy:
+        resources:
+          reservations:
+            devices:
+              - driver: nvidia
+                count: all
+                capabilities: [gpu]
+    restart: unless-stopped
+ 
+  phoenix:
+    image: arizephoenix/phoenix:latest
+    container_name: phoenix-gpu
+    ports:
+      - "6006:6006"
+      - "4317:4317"
+    environment:
+      PHOENIX_WORKING_DIR: /data
+    volumes:
+      - phoenix_data:/data
+    networks:
+      - phoenix_net
+    depends_on:
+      - ollama
+    
+  postgres-db:
+    image: pgvector/pgvector:pg17
+    container_name: postgres-langchain
+    environment:
+      POSTGRES_USER: langchain_user
+      POSTGRES_PASSWORD: langchain_pass
+      POSTGRES_DB: langchain_db
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    networks:
+      - phoenix_net
+    restart: unless-stopped
+
+networks:
+  phoenix_net:
+    driver: bridge
+ 
+volumes:
+  ollama_data:
+  postgres_data:
+  phoenix_data:
+ 

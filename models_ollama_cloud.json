@@ -1,0 +1,274 @@
+{
+    "models": [
+        {
+            "details": {
+                "families": null,
+                "family": "",
+                "format": "",
+                "parameter_size": "",
+                "parent_model": "",
+                "quantization_level": ""
+            },
+            "digest": "05afbac4bad6",
+            "model": "gpt-oss:20b",
+            "modified_at": "2025-08-05T00:00:00Z",
+            "name": "gpt-oss:20b",
+            "size": 13780162412
+        },
+        {
+            "details": {
+                "families": null,
+                "family": "",
+                "format": "",
+                "parameter_size": "",
+                "parent_model": "",
+                "quantization_level": ""
+            },
+            "digest": "221b330d11a8",
+            "model": "gemma4:31b",
+            "modified_at": "2026-04-02T09:00:00-08:00",
+            "name": "gemma4:31b",
+            "size": 62546177752
+        },
+        {
+            "details": {
+                "families": null,
+                "family": "",
+                "format": "",
+                "parameter_size": "",
+                "parent_model": "",
+                "quantization_level": ""
+            },
+            "digest": "da11955bb451",
+            "model": "nemotron-3-super",
+            "modified_at": "2026-03-11T00:00:00Z",
+            "name": "nemotron-3-super",
+            "size": 230500000000
+        },
+        {
+            "details": {
+                "families": null,
+                "family": "",
+                "format": "",
+                "parameter_size": "",
+                "parent_model": "",
+                "quantization_level": ""
+            },
+            "digest": "079ba36ea28c",
+            "model": "deepseek-v4-pro",
+            "modified_at": "2026-04-24T00:00:00Z",
+            "name": "deepseek-v4-pro",
+            "size": 1600000000000
+        },
+        {
+            "details": {
+                "families": null,
+                "family": "",
+                "format": "",
+                "parameter_size": "",
+                "parent_model": "",
+                "quantization_level": ""
+            },
+            "digest": "f7e3b2a16d5c",
+            "model": "mistral-large-3:675b",
+            "modified_at": "2025-12-02T00:00:00Z",
+            "name": "mistral-large-3:675b",
+            "size": 682000000000
+        },
+        {
+            "details": {
+                "families": null,
+                "family": "",
+                "format": "",
+                "parameter_size": "",
+                "parent_model": "",
+                "quantization_level": ""
+            },
+            "digest": "882e35812821",
+            "model": "glm-5.1",
+            "modified_at": "2026-04-07T08:00:00-07:00",
+            "name": "glm-5.1",
+            "size": 1507728316928
+        },
+        {
+            "details": {
+                "families": null,
+                "family": "",
+                "format": "",
+                "parameter_size": "",
+                "parent_model": "",
+                "quantization_level": ""
+            },
+            "digest": "d189309738f0",
+            "model": "kimi-k3",
+            "modified_at": "2026-07-27T08:00:00-07:00",
+            "name": "kimi-k3",
+            "size": 1560860324864
+        },
+        {
+            "details": {
+                "families": null,
+                "family": "",
+                "format": "",
+                "parameter_size": "",
+                "parent_model": "",
+                "quantization_level": ""
+            },
+            "digest": "9ce5291d9c0e",
+            "model": "minimax-m3",
+            "modified_at": "2026-06-01T00:00:00Z",
+            "name": "minimax-m3",
+            "size": 0
+        },
+        {
+            "details": {
+                "families": null,
+                "family": "",
+                "format": "",
+                "parameter_size": "",
+                "parent_model": "",
+                "quantization_level": ""
+            },
+            "digest": "4eecabff7a75",
+            "model": "nemotron-3-ultra",
+            "modified_at": "2026-06-04T00:00:00Z",
+            "name": "nemotron-3-ultra",
+            "size": 0
+        },
+        {
+            "details": {
+                "families": null,
+                "family": "",
+                "format": "",
+                "parameter_size": "",
+                "parent_model": "",
+                "quantization_level": ""
+            },
+            "digest": "1a7e88d8c572",
+            "model": "kimi-k2.7-code",
+            "modified_at": "2026-06-12T00:00:00Z",
+            "name": "kimi-k2.7-code",
+            "size": 595148192736
+        },
+        {
+            "details": {
+                "families": null,
+                "family": "",
+                "format": "",
+                "parameter_size": "",
+                "parent_model": "",
+                "quantization_level": ""
+            },
+            "digest": "4764ecb21f85",
+            "model": "kimi-k2.6",
+            "modified_at": "2026-04-20T00:00:00Z",
+            "name": "kimi-k2.6",
+            "size": 595148192736
+        },
+        {
+            "details": {
+                "families": null,
+                "family": "",
+                "format": "",
+                "parameter_size": "",
+                "parent_model": "",
+                "quantization_level": ""
+            },
+            "digest": "d98fe6ba01e6",
+            "model": "gpt-oss:120b",
+            "modified_at": "2025-08-05T00:00:00Z",
+            "name": "gpt-oss:120b",
+            "size": 65290180781
+        },
+        {
+            "details": {
+                "families": null,
+                "family": "",
+                "format": "",
+                "parameter_size": "",
+                "parent_model": "",
+                "quantization_level": ""
+            },
+            "digest": "d1008bea3761",
+            "model": "minimax-m2.7",
+            "modified_at": "2026-03-18T00:00:00Z",
+            "name": "minimax-m2.7",
+            "size": 480836588544
+        },
+        {
+            "details": {
+                "families": null,
+                "family": "",
+                "format": "",
+                "parameter_size": "",
+                "parent_model": "",
+                "quantization_level": ""
+            },
+            "digest": "b909ca2f1b7f",
+            "model": "qwen3.5:397b",
+            "modified_at": "2026-02-16T00:00:00Z",
+            "name": "qwen3.5:397b",
+            "size": 397000000000
+        },
+        {
+            "details": {
+                "families": null,
+                "family": "",
+                "format": "",
+                "parameter_size": "",
+                "parent_model": "",
+                "quantization_level": ""
+            },
+            "digest": "4de9bf66c0eb",
+            "model": "deepseek-v4-flash:0731",
+            "modified_at": "2026-07-31T08:00:00-07:00",
+            "name": "deepseek-v4-flash:0731",
+            "size": 166878536440
+        },
+        {
+            "details": {
+                "families": null,
+                "family": "",
+                "format": "",
+                "parameter_size": "",
+                "parent_model": "",
+                "quantization_level": ""
+            },
+            "digest": "f553240f6dc4",
+            "model": "glm-5.2",
+            "modified_at": "2026-06-16T08:00:00-07:00",
+            "name": "glm-5.2",
+            "size": 0
+        },
+        {
+            "details": {
+                "families": null,
+                "family": "",
+                "format": "",
+                "parameter_size": "",
+                "parent_model": "",
+                "quantization_level": ""
+            },
+            "digest": "ac252c581d64",
+            "model": "deepseek-v4-flash:preview",
+            "modified_at": "2026-04-24T00:00:00Z",
+            "name": "deepseek-v4-flash:preview",
+            "size": 140000000000
+        },
+        {
+            "details": {
+                "families": null,
+                "family": "",
+                "format": "",
+                "parameter_size": "",
+                "parent_model": "",
+                "quantization_level": ""
+            },
+            "digest": "a4b4f1851393",
+            "model": "nemotron-3-nano:30b",
+            "modified_at": "2025-12-15T00:00:00Z",
+            "name": "nemotron-3-nano:30b",
+            "size": 32645090390
+        }
+    ]
+}
